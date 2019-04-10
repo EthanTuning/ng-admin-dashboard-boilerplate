@@ -1,0 +1,30 @@
+.component-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 128px);
+}
+
+.login-card {
+    width: 35%;
+    height: 40%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > * {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.app-button {
+    position: absolute;
+    right:    0;
+    bottom:   0;
+}
