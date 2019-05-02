@@ -1,14 +1,25 @@
-<div class="component-container">
-  <mat-card class="login-card">
-    <mat-card-content class="form-container">
-      <h1>Login</h1>
-      <mat-form-field>
-        <input matInput placeholder="Username" />
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Password" />
-      </mat-form-field>
-      <button class="app-button" mat-raised-button color="primary">Login</button>
-    </mat-card-content>
-  </mat-card>
-</div>
+<mat-sidenav-container>
+  <mat-toolbar class="main-toolbar">
+      <span class="title">Angular Admin Dashboard</span>
+  </mat-toolbar>
+  <div class="app-content">
+      <h1>Welcome!</h1>
+      <div class="component-container">
+        <mat-card class="login-card">
+          <mat-card-content class="form-container">
+            <h2>Login</h2>
+            <mat-form-field>
+              <input matInput placeholder="Username" />
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Password" />
+            </mat-form-field>
+            <button (click)="loginUser()" routerLink="/home" class="app-button" mat-raised-button color="primary">Login</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+  </div>
+  <mat-toolbar class="footer-toolbar">
+      <span>by Tuning Freelance</span>
+  </mat-toolbar>
+</mat-sidenav-container>

@@ -1,6 +1,4 @@
-import { Component, Optional } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +6,4 @@ import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  
-  title = 'Admin Dashboard';
-
-}
+export class AppComponent { }
